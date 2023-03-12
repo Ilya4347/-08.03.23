@@ -80,7 +80,7 @@ Console.WriteLine ("Введено неверное число");
 
 32679 -> 6*/
 
-Console.WriteLine("Введите число ");
+/*Console.WriteLine("Введите число ");
 string number = Console.ReadLine()!;
 if (number.Length >= 3){
 Console.WriteLine ($"{number}->{number[2]}");
@@ -88,4 +88,17 @@ Console.WriteLine ($"{number}->{number[2]}");
 else 
 {    
 Console.WriteLine ("Третьей цифры нет");
-}
+}*/
+
+/*Задача 15: Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
+
+6 -> да
+7 -> да
+1 -> нет
+*/
+
+Console.WriteLine("Введите число ");
+int number = int.Parse(Console.ReadLine()!); 
+if(number<8&&number>5) Console.WriteLine("день недели является выходным");
+ else Console.WriteLine("день недели не является выходным");
+if(number>7) Console.WriteLine("такой день недели не существует");
