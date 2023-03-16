@@ -104,6 +104,33 @@ if(number<8&&number>5) Console.WriteLine("день недели является
 if(number>7) Console.WriteLine("такой день недели не существует");*/
 
 
+/*Задача 19
+
+Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
+
+14212 -> нет
+
+12821 -> да
+
+23432 -> да*/
+
+/*Console.WriteLine ("Введите пятизначное число");
+String a = Console.ReadLine()!;
+if (a.Length == 5){
+
+}
+    if (a[0]==a[4]&& a[1]==a[3])
+{
+        Console.WriteLine ("число является палиндромом");
+}
+else
+{
+   Console.WriteLine ("число не является палиндромом");
+}
+
+*/
+
+
 /*Задача 21
 
 Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.
@@ -135,7 +162,7 @@ System.Console.WriteLine("Расстояние между точками = " + r
 3 -> 1, 8, 27
 5 -> 1, 8, 27, 64, 125*/
 
-int ReadInt(string text)
+/*int ReadInt(string text)
 {
 System.Console.Write(text);
 return Convert.ToInt32(Console.ReadLine());
@@ -150,4 +177,6 @@ System.Console.Write(Math.Pow(i, 3) + " ");
 }
 
 int number = ReadInt("Введите число: ");
-NumberPow(number);
+NumberPow(number);*/
+
+
