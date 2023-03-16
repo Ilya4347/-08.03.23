@@ -97,8 +97,33 @@ Console.WriteLine ("Третьей цифры нет");
 1 -> нет
 */
 
-Console.WriteLine("Введите число ");
+/*Console.WriteLine("Введите число ");
 int number = int.Parse(Console.ReadLine()!); 
 if(number<8&&number>5) Console.WriteLine("день недели является выходным");
  else Console.WriteLine("день недели не является выходным");
-if(number>7) Console.WriteLine("такой день недели не существует");
+if(number>7) Console.WriteLine("такой день недели не существует");*/
+
+
+/*Задача 21
+
+Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.
+
+A (3,6,8); B (2,1,-7), -> 15.84
+
+A (7,-5, 0); B (1,-1,9) -> 11.53*/
+
+int ReadInt(string text)
+{
+System.Console.Write(text);
+return Convert.ToInt32(Console.ReadLine());
+}
+int[] a = new int[3];
+int[] b = new int[3];
+a[0] = ReadInt("Введите координату X точки A: ");
+a[1] = ReadInt("Введите координату Y точки A: ");
+a[2] = ReadInt("Введите координату Z точки A: ");
+b[0] = ReadInt("Введите координату X точки B: ");
+b[1] = ReadInt("Введите координату Y точки B: ");
+b[2] = ReadInt("Введите координату Z точки B: ");
+double res = Math.Round(Math.Sqrt(Math.Pow(a[0]-b[0], 2) + Math.Pow(a[1]-b[1], 2) + Math.Pow(a[2]-b[2], 2)), 2);
+System.Console.WriteLine("Расстояние между точками = " + res);
